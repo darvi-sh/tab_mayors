@@ -29,6 +29,10 @@ You will need 3 services:
    In FaunaDB create a database and name it `mayors`. Create a collection called `mayors` as well.
 
    Under the same database, go to **Security** and create a **key**. Keep it for the next step.
+   
+   Under **Indexes**, create `mayors_by_channel` index and fill the inputs as:
+   
+   Source Colletion: `mayors`, Index Name: `mayors_by_channel`, Terms: `data.channel`. Save.
 
 5. Connect Netlify to FaunaDB
 
